@@ -1,0 +1,138 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%); 
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+html {
+    font-size: 14px;
+    height: 100vh;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Cream);
+    padding: 1rem;
+}
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    max-width: 42.857rem;
+    /* height: auto; */
+}
+
+.image {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    width: 50%;
+    border-radius: .7rem 0 0 .7rem;
+}
+
+.info {
+    max-width: 50%;
+    background-color: var(--White);
+    border-radius: 0 .7rem .7rem 0;
+    padding: 2.285rem;
+    font-family: 'Montserrat', sans-serif; 
+    color: var(--Dark-grayish-blue);
+}
+
+.info h2 {
+    font-size: .8rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.info h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.3rem;    
+    line-height: 2.2rem;
+    color: var(--Very-dark-blue);
+    margin-bottom: 1.7rem;
+}
+
+.info p {
+    line-height: 1.7rem;
+    margin-bottom: 2.35rem;
+}
+
+.price {
+    display: flex;
+}
+
+.price span:first-child {
+    font-size: 2.3rem;
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+}
+.price span:last-child {
+    font-size: .9rem;
+    padding-left: 1.1rem;
+    text-decoration: line-through;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.45rem;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    /* padding: 20px 60px; */
+    border-radius: .5rem;
+    margin-top: 2.65rem;
+}
+
+.btn img {
+    padding-right: .714rem;
+}
+
+footer .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding-top: .5rem;
+      }
+  
+footer .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+@media (max-width:630px) {
+    body {
+        padding-top: 2rem;
+    }
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        max-width: 24.642rem ;
+        min-height: 43.785rem;
+    }
+    .image {
+        background-image: url("../images/image-product-mobile.jpg");
+        background-size: cover;
+        width: inherit;
+        height: 17.142rem;
+        border-radius: .7rem .7rem 0 0;
+    }
+
+    .info {
+        max-width: max-content;
+        border-radius: 0 0 .7rem .7rem;
+        padding: 1.7rem;
+    }
+    .info h1, p, .price {
+        margin-top: -.45rem;
+    }
+
+    .btn {
+        margin-top: 1.7rem;
+    }
+    
+}
